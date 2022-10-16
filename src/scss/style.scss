@@ -1,0 +1,219 @@
+@import "./variables/variables";
+@import "../../node_modules/normalize.css/normalize.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $white-gradient;
+}
+
+.hero {
+  &__logo-container {
+    width: 10rem;
+    margin-bottom: 2.9rem;
+    margin-left: 3.5rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__girl-img {
+    width: 100%;
+    margin-bottom: 2.9rem;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  min-height: 100vh;
+  background: $white-gradient;
+}
+
+.main-content-wrapper {
+  padding-top: 2rem;
+  text-align: center;
+
+  &__title {
+    font-size: 4rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $desaturated-Red;
+    line-height: 4.3rem;
+    letter-spacing: 1rem;
+    margin-bottom: 1.1rem;
+
+    &-span {
+      font-weight: 600;
+      color: $dark-Grayish-Red;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    color: $desaturated-Red;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 2.2rem;
+    padding: 0 3rem;
+    margin: 0 0 3rem;
+  }
+
+  &__form {
+    position: relative;
+
+    padding: 0 3.5rem;
+
+    &-email-input {
+      width: 100%;
+      padding: 1.5rem 1.5rem 1.5rem 2.3rem;
+      border-radius: 2.5rem;
+      box-sizing: border-box;
+      font-size: 1.4rem;
+      font-family: "Josefin Sans", sans-serif;
+      border: 1px solid $desaturated-Red;
+      outline: none;
+      transition: 0.5s;
+      background-color: transparent;
+
+      &::placeholder {
+        color: $desaturated-Red;
+        opacity: 0.4;
+      }
+    }
+
+    &-submit-btn {
+      position: absolute;
+      top: -1px;
+      right: 3rem;
+      padding: 1.4rem 2.6rem;
+      border-radius: 2.5rem;
+      border: 0;
+      background: $pink-gradient;
+      transition: 0.7s;
+
+      &:hover {
+        filter: brightness(125%);
+        cursor: pointer;
+      }
+
+      &:focus {
+      }
+    }
+
+    &-error {
+      position: absolute;
+      top: 1.2rem;
+      right: 11rem;
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    &-error-message {
+      position: absolute;
+      left: 5.5rem;
+      bottom: -2.5rem;
+      font-size: 1.2rem;
+      font-family: "Josefin Sans", sans-serif;
+      color: $soft-Red;
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
+}
+
+.main-girl-image {
+  display: none;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: $soft-Red;
+}
+
+@media (max-width: 999px) {
+  .main-container {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero__girl-img {
+    display: none;
+  }
+
+  .main-girl-image {
+    display: block;
+    object-fit: cover;
+  }
+
+  .hero {
+    margin-bottom: 13.4rem;
+
+    &__img {
+      width: 16rem;
+    }
+  }
+
+  .main-container {
+    display: flex;
+    overflow-x: hidden;
+    background: url("../assets/images/bg-pattern-desktop.svg") no-repeat;
+    background-size: cover;
+  }
+
+  .main-content-wrapper {
+    padding: 5.4rem 13rem;
+
+    &__title {
+      font-size: 6.5rem;
+      line-height: 6.7rem;
+      text-align: start;
+      padding-left: 3.5rem;
+      letter-spacing: 1.7rem;
+      margin-bottom: 2.3rem;
+      max-width: 50rem;
+    }
+
+    &__paragraph {
+      text-align: start;
+      padding: 0 1rem 0 3.9rem;
+      font-size: 1.61rem;
+      line-height: 2.7rem;
+      margin-bottom: 4rem;
+    }
+
+    &__form {
+      max-width: 50rem;
+
+      &-email-input {
+        padding: 2rem 0 1.7rem 3.3rem;
+        font-size: 1.6rem;
+        border-radius: 3rem;
+      }
+
+      &-submit-btn {
+        padding: 1.8rem 4.5rem;
+        border-radius: 3rem;
+        right: 1.3rem;
+      }
+
+      &-error {
+        right: 13rem;
+        top: 1.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="main-content-wrapper">
+        <header class="hero">
+          <figure class="hero__logo-container">
+            <img
+              class="hero__img"
+              src="./assets/images/logo.svg"
+              alt="base apparel logo"
+            />
+          </figure>
+          <img
+            class="hero__girl-img"
+            src="./assets/images/hero-mobile.jpg"
+            alt="photo of a girl"
+          />
+        </header>
+        <h1 class="main-content-wrapper__title">
+          We're
+          <span class="main-content-wrapper__title-span">coming soon</span>
+        </h1>
+        <p class="main-content-wrapper__paragraph">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form class="main-content-wrapper__form" novalidate>
+          <input
+            class="main-content-wrapper__form-email-input"
+            type="email"
+            placeholder="Email Address"
+          />
+          <button
+            class="main-content-wrapper__form-submit-btn"
+            type="submit"
+            aria-label="Submit button"
+          >
+            <img src="./assets/images/icon-arrow.svg" />
+          </button>
+          <img
+            class="main-content-wrapper__form-error"
+            src="./assets/images/icon-error.svg"
+            alt="error-icon"
+          />
+          <small class="main-content-wrapper__form-error-message"
+            >Please provide a vaild email</small
+          >
+        </form>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Ivan</a>.
+        </p>
+      </div>
+      <img
+        class="main-girl-image"
+        src="./assets/images/hero-desktop.jpg"
+        alt="photo of a girl"
+      />
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+
+<!-- Mis notas
+- El aria-label del boton sirve para indicar que con ese boton se envia el formulario.
+- Para los siguientes proyectos utilizar el conversor de Parcel para convertir las imagenes .jpg en .webp
+- Establecer el width y height desde aqui.
+- Si todo el documento utiliza una sola fuente ponerla en html {}
+-->

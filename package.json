@@ -1,0 +1,20 @@
+{
+  "name": "base-apparel-coming-soon-master",
+  "version": "1.0.0",
+  "description": "Design preview for the Base Apparel coming soon page coding challenge",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
